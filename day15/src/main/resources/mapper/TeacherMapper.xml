@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiaoshu.dao.TeacherMapper">
+	<select id="findT" resultType="teacher" parameterType="teacher">
+		select * from teacher
+	</select>
+	<insert id="addTeacher" parameterType="teacher">
+		insert into teacher values(null,#{tname})
+	</insert>
+</mapper>
